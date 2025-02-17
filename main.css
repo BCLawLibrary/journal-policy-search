@@ -58,8 +58,9 @@ h1 {
   border-radius: 2em;
 }
 
+.card__title,
 .card__title a {
-  font-size: 1.5em;
+  font-size: 22px;
   font-weight: bold;
   text-decoration: none;
   color: #501315;
@@ -67,6 +68,11 @@ h1 {
 
 .card__field {
   font-weight: bold;
+}
+
+.card__policy a {
+  color: black;
+  text-decoration: none;
 }
 
 .card__policy ul {

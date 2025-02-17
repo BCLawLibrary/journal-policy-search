@@ -31,7 +31,7 @@ function formatJournal(rowData) {
   const formatTitle = () => {
     if (title !== "") {
       if (journalLink !== "") {
-        title = `<a href="${journalLink}">${title}</a>`;
+        title = `<a href="${journalLink}">${title} 🔗</a>`;
       }
     }
     return `<div class="card__title">${title}</div>`;
@@ -42,6 +42,15 @@ function formatJournal(rowData) {
       publisher = `<div class="card__publisher"><span class="card__field">Publisher: </span>${publisher}</div>`;
     }
     return publisher;
+  };
+
+  const formatPolicy = () => {
+    if (policyLink !== "") {
+      policyLink = `<a href=${policyLink}>Policy 🔗</a>`;
+    } else {
+      policyLink = "Policy";
+    }
+    return policyLink;
   };
 
   const formatLocations = () => {
@@ -86,11 +95,12 @@ function formatJournal(rowData) {
 
   titleInfo = formatTitle();
   publisherInfo = formatPublisher();
+  policyInfo = formatPolicy();
   locationInfo = formatLocations();
   embargoInfo = formatEmbargo();
   versionInfo = formatVersions();
   noteInfo = formatNotes();
-  return `<div class="policies__card">${titleInfo}${publisherInfo}<div class="card__policy"><div class="card__field">Policy: </div><ul>${locationInfo}${embargoInfo}${versionInfo}</ul></div>${noteInfo}</div>`;
+  return `<div class="policies__card">${titleInfo}${publisherInfo}<div class="card__policy"><div class="card__field">${policyInfo}: </div><ul>${locationInfo}${embargoInfo}${versionInfo}</ul></div>${noteInfo}</div>`;
 }
 
 function initializeTable(data) {
@@ -119,7 +129,7 @@ function initializeTable(data) {
     pageLength: 999,
     data: data,
     columns: custom_columns,
-    language: { search: "", searchPlaceholder: "Journal name..." },
+    language: { search: "", searchPlaceholder: "Search journal name..." },
   });
 
   return table;
