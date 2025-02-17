@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+}
+
+h1 {
+  margin-bottom: 1em;
+  color: #501315;
+}
+
+.policies {
+  width: 100%;
+  max-width: 700px;
+}
+
+.dt-search {
+  margin-bottom: 2em;
+}
+
+#dt-search-0 {
+  width: 100%;
+  height: 3em;
+  padding-left: 1em;
+  border-radius: 2em;
+  border: 1px solid gray;
+  font-size: 1em;
+}
+
+#policies__table {
+  width: 100%;
+  border-spacing: 0;
+}
+
+#policies__table thead {
+  display: none;
+}
+
+.policies__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  row-gap: 1em;
+  border: 1px solid gray;
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 2em;
+}
+
+.card__title a {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  color: #501315;
+}
+
+.card__field {
+  font-weight: bold;
+}
+
+.card__policy ul {
+  margin-left: 1.5em;
+}
+
+.card__policy .card__field {
+  margin-bottom: 0.5em;
+}
