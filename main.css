@@ -68,6 +68,7 @@ h1 {
 
 .card__field {
   font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
 .card__policy a {
@@ -79,6 +80,21 @@ h1 {
   margin-left: 1.5em;
 }
 
-.card__policy .card__field {
-  margin-bottom: 0.5em;
+.fg-buttonset {
+  display: flex;
+  justify-content: center;
+}
+
+.fg-buttonset nav {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1em;
+}
+
+.fg-button {
+  height: 2em;
+  width: 2em;
+  background-color: white;
+  border: 1px solid gray;
+  border-radius: 0;
 }

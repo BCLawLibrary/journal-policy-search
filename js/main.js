@@ -124,9 +124,9 @@ function initializeTable(data) {
   }
 
   const table = new DataTable("#policies__table", {
-    dom: "ftr",
+    dom: "Bfrtp",
     autoWidth: false,
-    pageLength: 999,
+    pageLength: 5,
     data: data,
     columns: custom_columns,
     language: { search: "", searchPlaceholder: "Search journal name..." },
