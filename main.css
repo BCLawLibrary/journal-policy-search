@@ -1,29 +1,29 @@
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .journal-policy-search {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 100px;
   padding-top: 50px;
 }
 
 .journal-policy-search h1 {
-  margin-bottom: 1em;
   color: #501315;
   font-size: 2em !important;
+  margin-bottom: 1em;
 }
 
 .policies {
-  width: 100%;
   max-width: 700px;
+  width: 100%;
 }
 
 .dt-search {
@@ -31,17 +31,17 @@
 }
 
 #dt-search-0 {
-  width: 100%;
+  border: 1px solid gray;
+  border-radius: 2em;
+  font-size: 1em;
   height: 3em;
   padding-left: 1em;
-  border-radius: 2em;
-  border: 1px solid gray;
-  font-size: 1em;
+  width: 100%;
 }
 
 #policies__table {
-  width: 100%;
   border-spacing: 0;
+  width: 100%;
 }
 
 #policies__table thead {
@@ -49,24 +49,24 @@
 }
 
 .policies__card {
+  align-items: flex-start;
+  border: 1px solid gray;
+  border-radius: 2em;
+  color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
-  row-gap: 0.5em;
-  border: 1px solid gray;
   margin-bottom: 2em;
   padding: 2em;
-  border-radius: 2em;
-  color: black;
+  row-gap: 0.5em;
 }
 
 .card__title,
 .card__title a {
+  color: #501315;
   font-size: 20px;
   font-weight: bold;
   text-decoration: none;
-  color: #501315;
 }
 
 .card__field {
@@ -89,15 +89,15 @@
 }
 
 .fg-buttonset nav {
+  column-gap: 1em;
   display: flex;
   flex-direction: row;
-  column-gap: 1em;
 }
 
 .fg-button {
-  height: 2em;
-  width: 2em;
   background-color: white;
   border: 1px solid gray;
   border-radius: 0;
+  height: 2em;
+  width: 2em;
 }
