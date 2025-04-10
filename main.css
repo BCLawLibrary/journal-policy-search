@@ -44,6 +44,15 @@
   width: 100%;
 }
 
+.policies__loading {
+  display: flex;
+  justify-content: center;
+}
+
+.policies__loading img {
+  width: 2rem;
+}
+
 #policies__table thead {
   display: none;
 }

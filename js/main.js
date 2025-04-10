@@ -139,6 +139,8 @@ $(document).ready(function () {
   async function main(journalUrl) {
     const journalData = await getJournalData(journalUrl);
     initializeTable(journalData);
+
+    $(".policies__loading").hide();
   }
   const journalUrl =
     "https://docs.google.com/spreadsheets/d/e/2PACX-1vT9onUjR4c1Fij1PC_t4p4L-MJWs8-_hJpuvG6KdH-RuoQawme2VR_1b5jBKUtGgbhwfPymKMDeDh7J/pub?gid=0&single=true&output=csv";
